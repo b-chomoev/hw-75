@@ -1,7 +1,9 @@
 import express from 'express';
 import responseRouter from './routers/responses';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 const port = 8000;
 
 app.use(express.json());
