@@ -5,7 +5,7 @@ const cipherRouter = express.Router();
 const Vigenere = require('caesar-salad').Vigenere;
 
 cipherRouter.post('/encode', (req, res) => {
-    if (!req.body.password || !req.body.message) {
+    if (req.body.password !== 'password' || !req.body.message) {
         res.status(400).send('Password and message are required');
     }
 
