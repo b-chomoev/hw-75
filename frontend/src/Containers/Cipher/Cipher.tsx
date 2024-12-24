@@ -49,7 +49,7 @@ const Cipher = () => {
     <div>
       <Container maxWidth="sm">
         <Grid container direction="row" alignItems="center" spacing={2}>
-          <Grid>
+          <Grid size={12}>
             <TextField
               style={{width: '100%'}}
               id="encode"
@@ -60,7 +60,7 @@ const Cipher = () => {
             />
           </Grid>
 
-          <Grid container alignItem="center" direction="row">
+          <Grid container alignItems="center" direction="row">
             <Grid size={6}>
               <TextField
                 style={{width: '100%'}}
@@ -79,7 +79,7 @@ const Cipher = () => {
             </Grid>
           </Grid>
 
-          <Grid>
+          <Grid size={12}>
             <TextField
               style={{width: '100%'}}
               id="decode"
