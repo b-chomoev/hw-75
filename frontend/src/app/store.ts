@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { messageReducer } from '../store/slices/messageSlice.ts';
+import { messageReducer } from '../Containers/Cipher/slices/chiperSlice.ts';
 
 export const store = configureStore({
   reducer: {
